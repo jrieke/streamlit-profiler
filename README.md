@@ -29,7 +29,7 @@ and shows the results right within the Streamlit app.
 pip install streamlit-profiler
 ```
 
-## How to use it
+## Usage
 
 ```python
 import streamlit as st
@@ -37,11 +37,5 @@ from streamlit_profiler import Profiler
 
 with Profiler():
     st.title("My app")
-    # ... and any other code
+    # ... other code
 ```
-
-## TODOs
-
-PRs are welcome! If you want to work on any of these things, please open an issue to coordinate.
-
-- [ ] TBD
