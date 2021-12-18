@@ -1,3 +1,9 @@
+"""
+Runs some functions and shows the profiler.
+
+Install the package and start with `streamlit run examples/basic.py`.
+"""
+
 import time
 import streamlit as st
 from streamlit_profiler import Profiler
