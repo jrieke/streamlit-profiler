@@ -10,7 +10,7 @@ and shows the results right within the Streamlit app.
 
 <sup>Alpha version, use with care.</sup>
 
-## <!--
+<!--
 
 <h3 align="center">
   🎉 <a href="https://github.com/jrieke/streamlit-profiler">Try it out</a> 🎉
