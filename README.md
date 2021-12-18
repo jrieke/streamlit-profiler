@@ -2,7 +2,7 @@
 
 [![PyPi](https://img.shields.io/pypi/v/streamlit-profiler)](https://pypi.org/project/streamlit-profiler/)
 
-**Runtime profiler for Streamlit, powered by [pyinstrument](https://github.com/joerick/pyinstrument).**
+**Runtime profiler for [Streamlit](https://github.com/streamlit/streamlit), powered by [pyinstrument](https://github.com/joerick/pyinstrument).**
 
 streamlit-profiler is a Streamlit component that helps you find out which parts of your
 code are slow. It profiles code via [pyinstrument](https://github.com/joerick/pyinstrument)
