@@ -49,16 +49,18 @@ class Profiler(OriginalProfiler):
         # Blue -> blue 80
         html = html.replace("#5db3ff", "#1c83e1")
         # Red -> red 80
-        # html = html.replace("#FF4159", "#ff2b2b")
+        html = html.replace("#FF4159", "#ff2b2b")
         # Yellow -> yellow 80
         # html = html.replace("#D8CB2A", "#faca2b")
+        # Green -> green 70
+        html = html.replace("#7ED321", "#21c354")
 
         # Add border to body.
         # TODO: Make border fill entire iframe and scroll the content (or only the
         #   runtimes without the header?).
         html = html.replace(
             "body,html{",
-            "body{position:absolute;top:0;right:0;bottom:0;left:0;overflow: hidden;border:1px solid #d6d6d8;border-radius:0.25rem;padding-bottom:20px !important;}body,html{",
+            "body{position:absolute;top:0;right:0;bottom:0;left:0;border:1px solid #d6d6d8;border-radius:0.25rem;padding-bottom: 20px !important}body,html{",
         )
 
         # Make header content rounded to match border.
@@ -66,6 +68,11 @@ class Profiler(OriginalProfiler):
             ".header[data-v-0183f483]{",
             ".header[data-v-0183f483]{border-radius:0.25rem 0.25rem 0 0;",
         )
+
+        # Make timeline content scrollable, but keep header fixed.
+        html = html.replace("#app{", "#app{display:flex;flex-flow:column;height:100%;")
+        # html = html.replace('height:"20px"', 'height:"0"')  # hide spacer
+        html = html.replace(".margins{", ".margins{overflow:scroll;")
 
         st.components.v1.html(html, height=600)
         return session
