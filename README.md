@@ -14,13 +14,13 @@ within your Streamlit app.
 ---
 
 <h3 align="center">
-  ⏱️ <a href="https://share.streamlit.io/jrieke/streamlit-profiler/main/examples/basic.py">Live demo</a> ⏱️
+  ⏱️ <a href="https://share.streamlit.io/jrieke/streamlit-profiler/main/examples/basic.py" target="_blank">Live demo</a> ⏱️
 </h3>
 
 ---
 
 <p align="center">
-    <a href="https://share.streamlit.io/jrieke/streamlit-profiler/main/examples/basic.py"><img src="images/demo.png" width=600></a>
+    <a href="https://share.streamlit.io/jrieke/streamlit-profiler/main/examples/basic.py" target="_blank"><img src="images/demo.png" width=600></a>
 </p>
 
 ## Installation
