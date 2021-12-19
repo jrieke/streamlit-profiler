@@ -14,7 +14,7 @@ within the Streamlit app.
 ---
 
 <h3 align="center">
-  🎉 <a href="https://share.streamlit.io/jrieke/streamlit-profiler/main/examples/basic.py">Live demo</a> 🎉
+  ⏱️ <a href="https://share.streamlit.io/jrieke/streamlit-profiler/main/examples/basic.py">Live demo</a> ⏱️
 </h3>
 
 ---
