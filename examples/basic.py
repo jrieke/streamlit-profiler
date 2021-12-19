@@ -11,35 +11,30 @@ from streamlit_profiler import Profiler
 
 with Profiler():
     st.title(
-        "Demo for [streamlit-profiler](https://github.com/jrieke/streamlit-profiler)"
+        "Demo for [streamlit-profiler](https://github.com/jrieke/streamlit-profiler) 🏄🏼"
     )
-    st.write(
-        """
-        Simulates a few long-running functions (using `time.sleep`) and profiles them. 
-        See code [here](https://github.com/jrieke/streamlit-profiler/blob/main/examples/basic.py).
-        """
-    )
+    st.write("""Select which functions you want to run:""")
 
-    name = st.text_input("Enter your name")
-
-    def find_lucky_number():
+    def clear_sky():
         time.sleep(1)
-        return 42
 
-    if name:
-        st.write(f"Hey {name} 👋 Your lucky number is:", find_lucky_number())
+    def inflate_balloons():
+        time.sleep(2)
 
-        clicked = st.button("Show me some balloons")
-        if clicked:
+    def release_balloons():
+        time.sleep(0.2)
+        st.balloons()
 
-            def inflate_balloons():
-                for i in range(3, 0, -1):
-                    st.write(f"{i}...")
-                    time.sleep(1)
+    if st.checkbox("Clear sky"):
+        clear_sky()
+    if st.checkbox("Inflate balloons"):
+        inflate_balloons()
+    if st.checkbox("Release!"):
+        release_balloons()
 
-            inflate_balloons()
-            st.write("Balloons! 🎈")
-            st.balloons()
+    st.write("...and see their runtime in the profiler:")
 
-    st.write("---")
-    st.write("Profiler is shown below 👇")
+
+st.caption(
+    "[View code for this demo](https://github.com/jrieke/streamlit-profiler/blob/main/examples/basic.py)"
+)
