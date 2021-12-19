@@ -20,7 +20,7 @@ within the Streamlit app.
 ---
 
 <p align="center">
-    <a href="https://github.com/jrieke/streamlit-profiler"><img src="images/demo.png" width=600></a>
+    <a href="https://share.streamlit.io/jrieke/streamlit-profiler/main/examples/basic.py"><img src="images/demo.png" width=600></a>
 </p>
 
 ## Installation
@@ -40,7 +40,7 @@ with Profiler():
     # ... other code
 
 # Or:
-# 
+#
 # p = Profiler()
 # p.start()
 # ...
@@ -49,5 +49,5 @@ with Profiler():
 
 Then start your app as usual: `streamlit run my_app.py`
 
-The `Profiler` class is an extension of `pyinstrument.Profiler`, so you can use 
+The `Profiler` class is an extension of `pyinstrument.Profiler`, so you can use
 [all of its functions](https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.Profiler).
