@@ -41,4 +41,5 @@ with Profiler():
             st.write("Balloons! 🎈")
             st.balloons()
 
+    st.write("---")
     st.write("Profiler is shown below 👇")
