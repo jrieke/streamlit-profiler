@@ -22,22 +22,22 @@ with Profiler():
 
     name = st.text_input("Enter your name")
 
-    def long_computation():
+    def find_lucky_number():
         time.sleep(1)
         return 42
 
     if name:
-        st.write(f"Hey {name} 👋 Your lucky number is:", long_computation())
+        st.write(f"Hey {name} 👋 Your lucky number is:", find_lucky_number())
 
-        clicked = st.button("Show something cool")
+        clicked = st.button("Show me some balloons")
         if clicked:
 
-            def countdown():
+            def inflate_balloons():
                 for i in range(3, 0, -1):
                     st.write(f"{i}...")
                     time.sleep(1)
 
-            countdown()
+            inflate_balloons()
             st.write("Balloons! 🎈")
             st.balloons()
 
