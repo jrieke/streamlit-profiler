@@ -5,7 +5,7 @@
 **Runtime profiler for Streamlit, powered by [pyinstrument](https://github.com/joerick/pyinstrument).**
 
 streamlit-profiler is a [Streamlit component](https://streamlit.io/components) that
-helps you find out which parts of your code are slow. It profiles code via
+helps you find out which parts of your app are slow. It profiles the code via
 [pyinstrument](https://github.com/joerick/pyinstrument) and shows the results right
 within your Streamlit app.
 
