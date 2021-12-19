@@ -56,8 +56,6 @@ class Profiler(OriginalProfiler):
         html = html.replace("#7ED321", "#21c354")
 
         # Add border to body.
-        # TODO: Make border fill entire iframe and scroll the content (or only the
-        #   runtimes without the header?).
         html = html.replace(
             "body,html{",
             "body{position:absolute;top:0;right:0;bottom:0;left:0;border:1px solid #d6d6d8;border-radius:0.25rem;padding-bottom: 20px !important}body,html{",
@@ -71,7 +69,6 @@ class Profiler(OriginalProfiler):
 
         # Make timeline content scrollable, but keep header fixed.
         html = html.replace("#app{", "#app{display:flex;flex-flow:column;height:100%;")
-        # html = html.replace('height:"20px"', 'height:"0"')  # hide spacer
         html = html.replace(".margins{", ".margins{overflow:scroll;")
 
         st.components.v1.html(html, height=600)
