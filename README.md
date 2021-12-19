@@ -21,7 +21,7 @@ within the Streamlit app.
 
 -->
 <p align="center">
-    <a href="https://github.com/jrieke/streamlit-profiler"><img src="demo.png" width=600></a>
+    <a href="https://github.com/jrieke/streamlit-profiler"><img src="images/demo.png" width=600></a>
 </p>
 
 ## Installation
