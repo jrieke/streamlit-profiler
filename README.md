@@ -40,3 +40,5 @@ with Profiler():
     st.title("My app")
     # ... other code
 ```
+
+Then start your app as usual with `streamlit run my_app.py`.
