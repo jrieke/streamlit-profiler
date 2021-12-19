@@ -3,7 +3,7 @@ from pyinstrument import Profiler as OriginalProfiler
 
 
 class Profiler(OriginalProfiler):
-    def __exit__(self, type, value, traceback):
-        result = super().__exit__(type, value, traceback)
+    def stop(self):
+        session = super().stop()
         st.components.v1.html(self.output_html(), height=600, scrolling=True)
-        return result
+        return session
