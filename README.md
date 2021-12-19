@@ -11,15 +11,14 @@ within the Streamlit app.
 
 <sup>Alpha version, use with care.</sup>
 
-<!--
+---
 
 <h3 align="center">
-  🎉 <a href="https://github.com/jrieke/streamlit-profiler">Try it out</a> 🎉
+  🎉 <a href="https://share.streamlit.io/jrieke/streamlit-profiler/main/examples/basic.py">Live demo</a> 🎉
 </h3>
 
 ---
 
--->
 <p align="center">
     <a href="https://github.com/jrieke/streamlit-profiler"><img src="images/demo.png" width=600></a>
 </p>
