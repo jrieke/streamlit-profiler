@@ -11,10 +11,16 @@ from streamlit_profiler import Profiler
 
 with Profiler():
     st.title(
-        "Test app for [streamlit-profiler](https://github.com/jrieke/streamlit-profiler)"
+        "Demo for [streamlit-profiler](https://github.com/jrieke/streamlit-profiler)"
+    )
+    st.write(
+        """
+        Simulates a few long-running functions (using `time.sleep`) and profiles them. 
+        See code [here](https://github.com/jrieke/streamlit-profiler/blob/main/examples/basic.py).
+        """
     )
 
-    name = st.text_input("Your name")
+    name = st.text_input("Enter your name")
 
     def long_computation():
         time.sleep(1)
@@ -34,3 +40,5 @@ with Profiler():
             countdown()
             st.write("Balloons! 🎈")
             st.balloons()
+
+    st.write("Profiler is shown below 👇")
