@@ -1,1 +1,1 @@
-streamlit-profiler==0.1.2
+streamlit-profiler==0.2.0
