@@ -40,7 +40,6 @@ with Profiler():
     # ... other code
 
 # Or:
-#
 # p = Profiler()
 # p.start()
 # ...
