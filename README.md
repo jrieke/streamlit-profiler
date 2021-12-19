@@ -39,6 +39,16 @@ from streamlit_profiler import Profiler
 with Profiler():
     st.title("My app")
     # ... other code
+
+# Or:
+# 
+# p = Profiler()
+# p.start()
+# ...
+# p.stop()
 ```
 
-Then start your app as usual with `streamlit run my_app.py`.
+Then start your app as usual: `streamlit run my_app.py`
+
+The `Profiler` class is an extension of `pyinstrument.Profiler`, so you can use 
+[all of its functions](https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.Profiler).
