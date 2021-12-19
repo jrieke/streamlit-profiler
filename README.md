@@ -4,9 +4,9 @@
 
 **Runtime profiler for Streamlit, powered by [pyinstrument](https://github.com/joerick/pyinstrument).**
 
-streamlit-profiler is a [Streamlit component](https://streamlit.io/components) that 
-helps you find out which parts of your code are slow. It profiles code via 
-[pyinstrument](https://github.com/joerick/pyinstrument) and shows the results right 
+streamlit-profiler is a [Streamlit component](https://streamlit.io/components) that
+helps you find out which parts of your code are slow. It profiles code via
+[pyinstrument](https://github.com/joerick/pyinstrument) and shows the results right
 within the Streamlit app.
 
 <sup>Alpha version, use with care.</sup>
@@ -19,10 +19,10 @@ within the Streamlit app.
 
 ---
 
-<p align="center">
-    <a href="https://github.com/jrieke/readme-template"><img src="demo.gif" width=600></a>
-</p>
 -->
+<p align="center">
+    <a href="https://github.com/jrieke/streamlit-profiler"><img src="demo.png" width=600></a>
+</p>
 
 ## Installation
 

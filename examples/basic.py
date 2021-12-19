@@ -10,7 +10,7 @@ from streamlit_profiler import Profiler
 
 
 with Profiler():
-    st.title("Streamlit App")
+    st.title("Test app")
 
     name = st.text_input("Your name")
 
