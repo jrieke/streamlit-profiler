@@ -54,11 +54,13 @@ class Profiler(OriginalProfiler):
         # html = html.replace("#D8CB2A", "#faca2b")
         # Green -> green 70
         html = html.replace("#7ED321", "#21c354")
+        # Font weight of green color from 500 to 600 (to match other colors).
+        # html = html.replace("e=500", "e=600")
 
         # Add border to body.
         html = html.replace(
             "body,html{",
-            "body{position:absolute;top:0;right:0;bottom:0;left:0;border:1px solid #d6d6d8;border-radius:0.25rem;padding-bottom: 20px !important}body,html{",
+            "body{position:absolute;top:0;right:0;bottom:0;left:0;border:1px solid #d6d6d8;border-radius:0.25rem}body,html{",  # padding-bottom: 20px !important
         )
 
         # Make header content rounded to match border.
@@ -67,9 +69,13 @@ class Profiler(OriginalProfiler):
             ".header[data-v-0183f483]{border-radius:0.25rem 0.25rem 0 0;",
         )
 
-        # Make timeline content scrollable, but keep header fixed.
+        # Make timeline content scrollable, but keep header fixed. Adapt padding.
         html = html.replace("#app{", "#app{display:flex;flex-flow:column;height:100%;")
-        html = html.replace(".margins{", ".margins{overflow:scroll;")
+        html = html.replace(
+            "#app{", "#app > div:nth-child(3){padding: 20px 30px;overflow:scroll}#app{"
+        )
+        html = html.replace('height:"20px"', 'height:"0"')  # remove spacer
+        # html = html.replace(".margins{", ".margins{overflow:scroll;")
 
         st.components.v1.html(html, height=600)
         return session
